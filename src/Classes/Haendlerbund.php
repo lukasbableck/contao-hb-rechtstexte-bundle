@@ -2,6 +2,7 @@
 namespace Lukasbableck\ContaoHBRechtstexteBundle\Classes;
 
 use Contao\CoreBundle\Monolog\ContaoContext;
+use Monolog\Level;
 use Monolog\Logger;
 use Psr\Log\LoggerInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
@@ -20,7 +21,7 @@ class Haendlerbund {
 			return $response->getContent();
 		}
 
-		$this->contaoGeneralLogger->log(Logger::CRITICAL, 'Händlerbund API request failed with status code '.$response->getStatusCode(), ['contao' => new ContaoContext(__METHOD__, ContaoContext::GENERAL)]);
+		$this->contaoGeneralLogger->error('Händlerbund API request failed with status code '.$response->getStatusCode(), ['contao' => new ContaoContext(__METHOD__, ContaoContext::GENERAL)]);
 
 		return '';
 	}
