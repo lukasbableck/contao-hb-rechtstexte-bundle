@@ -14,7 +14,7 @@ class Haendlerbund {
 	}
 
 	public function request(string $docID, string $language, string $accessToken): string {
-		$url = self::BASE_URL.'?did='.$docID.'&accessToken='.$accessToken.'&apiKey='.self::API_KEY.'&lang='.$language;
+		$url = self::BASE_URL.'?did='.$docID.'&AccessToken='.$accessToken.'&APIkey='.self::API_KEY.'&lang='.$language;
 		$response = $this->client->request('GET', $url);
 		if (200 === $response->getStatusCode()) {
 			return $response->getContent();
