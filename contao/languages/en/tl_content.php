@@ -5,7 +5,7 @@ $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_tyoe']['12766C53647'] = 'Cancel
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_tyoe']['12766C58F26'] = 'Payment & Shipping';
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_tyoe']['12766C5E204'] = 'Privacy Policy';
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_tyoe']['1293C20B491'] = 'Imprint';
-$GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_tyoe']['134CBB4D101'] = 'Battery Disposal';
+$GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_tyoe']['134CBB4D101'] = 'Battery Information';
 
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_language']['de'] = 'German';
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_language']['en'] = 'English';

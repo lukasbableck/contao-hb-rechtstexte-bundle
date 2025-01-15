@@ -5,7 +5,7 @@ $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_type_ref']['12766C53647'] = 'Wi
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_type_ref']['12766C58F26'] = 'Bezahlung & Versand';
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_type_ref']['12766C5E204'] = 'Datenschutzerklärung';
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_type_ref']['1293C20B491'] = 'Impressum';
-$GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_type_ref']['134CBB4D101'] = 'Batterieentsorgung';
+$GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_type_ref']['134CBB4D101'] = 'Batteriehinweise';
 
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_language_ref']['de'] = 'Deutsch';
 $GLOBALS['TL_LANG']['tl_content']['hb_rechtstext_language_ref']['en'] = 'Englisch';
