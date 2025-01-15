@@ -1,0 +1,47 @@
+{
+    "name": "lukasbableck/contao-hb-rechtstexte-bundle",
+    "type": "contao-bundle",
+	"description": "This bundle integrates the Händlerbund legal texts into Contao.",
+	"keywords": [
+		"händlerbund",
+		"rechtstexte",
+		"agb",
+		"widerruf",
+		"shop",
+		"impressum"
+	],
+    "license": "LGPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Lukas Bableck",
+			"email": "lukas@bableck.dev",
+			"homepage": "https://bableck.dev"
+		}
+	],
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^4.13 || ^5.3"
+    },
+	"conflict": {
+		"contao/manager-plugin": "<2.0 || >=3.0"
+	},
+	"require-dev": {
+		"contao/manager-plugin": "^2.0",
+		"friendsofphp/php-cs-fixer": "^3.57"
+	},
+    "autoload": {
+        "psr-4": {
+            "Lukasbableck\\ContaoHBRechtstexteBundle\\": "src/"
+        }
+    },
+	"extra": {
+		"contao-manager-plugin": "Lukasbableck\\ContaoHBRechtstexteBundle\\ContaoManager\\Plugin"
+	},
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "php-http/discovery": true,
+            "contao/manager-plugin": true
+        }
+    }
+}
