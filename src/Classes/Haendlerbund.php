@@ -2,8 +2,6 @@
 namespace Lukasbableck\ContaoHBRechtstexteBundle\Classes;
 
 use Contao\CoreBundle\Monolog\ContaoContext;
-use Monolog\Level;
-use Monolog\Logger;
 use Psr\Log\LoggerInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
