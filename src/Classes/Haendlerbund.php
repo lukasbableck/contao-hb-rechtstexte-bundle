@@ -12,15 +12,16 @@ class Haendlerbund {
 	public function __construct(private HttpClientInterface $client, private LoggerInterface $contaoGeneralLogger) {
 	}
 
-	public function request(string $docID, string $language, string $accessToken): string|null {
+	public function request(string $docID, string $language, string $accessToken): ?string {
 		$url = self::BASE_URL.'?did='.$docID.'&AccessToken='.$accessToken.'&APIkey='.self::API_KEY.'&lang='.$language;
-		try{
+		try {
 			$response = $this->client->request('GET', $url);
 			if (200 === $response->getStatusCode()) {
 				return $response->getContent();
 			}
-		}catch(\Exception $e){
+		} catch (\Exception $e) {
 			$this->contaoGeneralLogger->error('Händlerbund API request failed with exception '.$e->getMessage(), ['contao' => new ContaoContext(__METHOD__, ContaoContext::GENERAL)]);
+
 			return null;
 		}
 

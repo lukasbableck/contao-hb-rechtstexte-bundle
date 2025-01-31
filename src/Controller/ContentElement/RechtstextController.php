@@ -1,5 +1,4 @@
 <?php
-
 namespace Lukasbableck\ContaoHBRechtstexteBundle\Controller\ContentElement;
 
 use Contao\ContentModel;
@@ -36,7 +35,7 @@ class RechtstextController extends AbstractContentElementController {
 		$cacheItem = $cache->getItem($cacheKey);
 		if (!$cacheItem->isHit() || $cacheItem->get()['created'] < time() - 3) {
 			$hbResult = $this->haendlerbund->request($docID, $language, $accessToken);
-			if ($hbResult !== null) {
+			if (null !== $hbResult) {
 				$cacheItem->set(['created' => time(), 'content' => $hbResult]);
 				$cache->save($cacheItem);
 			}
