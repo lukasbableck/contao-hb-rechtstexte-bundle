@@ -33,7 +33,7 @@ class RechtstextController extends AbstractContentElementController {
 
 		$cacheKey = 'hb_rechtstext_'.$docID.'_'.$language.'_'.$accessToken;
 		$cacheItem = $cache->getItem($cacheKey);
-		if (!$cacheItem->isHit() || $cacheItem->get()['created'] < time() - 3) {
+		if (!$cacheItem->isHit() || $cacheItem->get()['created'] < time() - 3600) {
 			$hbResult = $this->haendlerbund->request($docID, $language, $accessToken);
 			if (null !== $hbResult) {
 				$cacheItem->set(['created' => time(), 'content' => $hbResult]);
